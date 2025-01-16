@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>COLOR Palette GENERATOR</h1>
+      <div class="input-section">
+        <input type="text" id="hex-input" placeholder="#a0006e" maxlength="7" />
+        <button id="generate-btn">Generate</button>
+        <button id="random-btn">Random</button>
+        <button id="complement-btn">Complementary</button>
+      </div>
+      <div class="palette" id="palette">
+        <!-- Main palette grid -->
+      </div>
+
+      <div class="contrast-section">
+        <h2>Contrast Checker</h2>
+        <div class="input-section">
+          <input
+            type="text"
+            id="color1-input"
+            placeholder="Color 1 (#ffffff)"
+            maxlength="7"
+          />
+          <input
+            type="text"
+            id="color2-input"
+            placeholder="Color 2 (#000000)"
+            maxlength="7"
+          />
+          <button id="check-contrast-btn">Check Contrast</button>
+          <button id="random-pair-btn">Random Pair</button>
+        </div>
+        <div class="contrast-display" id="contrast-display">
+          <!-- Contrast Checker Results -->
+        </div>
+        <div class="contrast-guide">
+          <h3>Contrast Ratio Guide</h3>
+          <ul>
+            <li><strong>1:1</strong> – No contrast, unreadable</li>
+            <li>
+              <strong>2:1</strong> – Barely visible, difficult for most users
+            </li>
+            <li>
+              <strong>3:1</strong> – Low contrast, hard for some users to read
+            </li>
+            <li><strong>4:1</strong> – Minimum for large text</li>
+            <li>
+              <strong>4.5:1</strong> – Minimum for regular text (WCAG
+              recommended)
+            </li>
+            <li><strong>5:1</strong> – Slightly better readability</li>
+            <li><strong>6:1</strong> – Good contrast for most users</li>
+            <li><strong>7:1</strong> – Recommended for optimal readability</li>
+            <li>
+              <strong>8:1</strong> – High contrast, easily readable by everyone
+            </li>
+            <li><strong>9:1</strong> – Very high contrast, clear and crisp</li>
+            <li><strong>10:1</strong> – Excellent for readability</li>
+            <li><strong>15:1</strong> – Super easy to read</li>
+            <li>
+              <strong>20:1</strong> – Extremely high contrast, very legible
+            </li>
+            <li>
+              <strong>21:1</strong> – Maximum contrast, ideal for accessibility
+            </li>
+          </ul>
+          <p>
+            Higher ratios improve accessibility, with 7:1 and above being great
+            for readability.
+          </p>
+        </div>
+        <footer class="footer">
+          <p>brewed in creativity, served by ahosmi</p>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
